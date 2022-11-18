@@ -12,21 +12,23 @@
         padding: 50px;
     }
 
-    #mybtn {
-        font-family: 'Courier New', Courier, monospace;
-        background-color:bisque;
-        font-size: medium;        
-        padding: 10px;
-        border-radius: 80%;
+    .btnlook{
+        margin: 20px;
+        border-radius: 50%;
+        background-color: rgb(145, 49, 124);
+        font-size: larger;
+        padding: 20px;
+        width: 150px;
+        height: auto;
     }
 
-    #mybtn:hover{
-        background-color:rgb(231, 109, 9);
+    .btnlook:hover{
+        background-color: rgb(120, 224, 120);
     }
 
     #topheader{
-        font-family: 'Times New Roman', Times, serif;
-        font-size:medium;
+        font-family: 'Times New Roman', Times, serif;      
+        color:firebrick;
     }
 
     #firstHeader{
@@ -39,6 +41,23 @@
         background-color: aquamarine;
     }
 
+    .plain
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:red
+    }
+
+    .special{
+        font-style: italic;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(10, 25, 230);        
+    }
+
+    .togglebgnd{
+        background-color: aquamarine;
+    }
+
 
 </style>
 
@@ -46,16 +65,23 @@
 
 <body>
 
-    <h1 id="topheader">This is a trial page</h1>
+    <h1 id="topheader">Hello World!</h1>
+
+    <p>This is paragraph 1</p>
+
+    <p>This is paragraph 2</p>
+
+    <p>This is paragraph 3</p>
 
     <div id = "container">
-        <button id="mybtn">Click Me</button>
-        <button id="mybtn2">Change!!</button>
+        <button id="plain" class="btnlook">Plain</button>
+        <button id="special" class="btnlook">Special</button>
+        <button id="toggle" class="btnlook">Toggle</button>
     </div>
 
     <img id="myimg" src="C:\Users\pm\Downloads\p2.jpg" width="auto" height="500px">
 
-    <script src=".\getset.js"></script>
+    <script src=".\classList.js"></script>
 </body>
 
 </html>
