@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Capture Events at Parent
+    </title>
+</head>
+
+<body>
+    <div id="ParentDiv">
+        <h1 id="Hdr1"> Header - 1st element in the Div</h1>
+
+        <p id = "p1">
+            This is some text
+        </p>
+
+        <button id="btn1">
+            Help
+        </button>
+
+        <button id="btn2">
+            OK
+        </button>
+
+        <button id="btn3">
+            Submit
+        </button>
+
+    </div>
+    
+    <!-- use defer to delay the load. Will execute before DOMContentLoaded event -->
+    <!-- use async to delay the load. Will execute before load event -->
+    <script defer src="./CaptureParentEvent.js"></script>
+</body>
+
+</html>
